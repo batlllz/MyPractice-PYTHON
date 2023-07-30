@@ -10,7 +10,7 @@ CI=PI*r**2
 print(Tr+SQ-CI)
            
            
-"""           
+           
 print(len("python program"))         
 print(chr(97))
 print(chr(96))        
@@ -19,4 +19,3 @@ print ("*" * 2)
 print ("*" * 3)
 print ("*" * 4 )
 
-"""
