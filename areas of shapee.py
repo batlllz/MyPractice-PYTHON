@@ -24,27 +24,30 @@ def triangle (length , hight):
     TArea=0.5*length*length
     return TArea
 
-n=int(input("chose number from 1-5 :"))
+x=1
+while (x<=5):
+    n=int(input("chose number from 1-5 :"))
+    if n == 1:
+      l=int(input("enter length :"))
+      print(square(l))
+    
+    elif n == 2:
+      r=int(input("enter radis :"))
+      print(circle(r))
+    
+    elif n == 3:
+      l=int(input("enter radis lengh:"))
+      w=int(input("enter radis width:"))
+      print(rectanglr(l , w))
+    
+    elif n == 4:
+      h=int(input("enter hight:"))
+      r=int(input("enter radis:"))
+      print(cylinder(h ,r))
 
-if n == 1:
-   l=int(input("enter length :"))
-   print(square(l))
-    
-elif n == 2:
-    r=int(input("enter radis :"))
-    print(circle(r))
-    
-elif n == 3:
-    l=int(input("enter radis lengh:"))
-    w=int(input("enter radis width:"))
-    print(rectanglr(l , w))
-    
-elif n == 4:
-     h=int(input("enter hight:"))
-     r=int(input("enter radis:"))
-     print(cylinder(h ,r))
-
-elif n == 5:
-    h=int(input("enter hight:"))
-    r=int(input("enter length:"))
-    print(triangle(h ,r))
+    elif n == 5:
+      h=int(input("enter hight:"))
+      r=int(input("enter length:"))
+      print(triangle(h ,r))
+    else:
+      print("more than range")
