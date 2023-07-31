@@ -1,0 +1,19 @@
+def remove_all(s1, s2):
+    s1_length = len(s1)
+    s2_length = len(s2)
+    new_string = ''
+
+i = 0
+while i < s1_length:
+    if i <= s1_length - s2_length and s1[i: i + s2_length] == s2:
+        i += s2_length
+    else:
+        new_string += s1[i]
+        i += 1
+        return new_string
+
+text = input("enter your text :")
+keyword = input("enter your word :")
+newText = remove_all(text, keyword)
+print("Before:", text)
+print("After: ", newText)
