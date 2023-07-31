@@ -1,0 +1,15 @@
+def count_occurrences(s1, s2):
+    counter = 0
+    for i in range(0, len(s1) - len(s2) + 1):
+        if s1[i:i + len(s2)] == s2:
+            counter += 1
+    return counter
+
+text = input("Enter any text: ")
+keyword = input("Enter word to search occurrences: ")
+
+result = count_occurrences(text, keyword)
+
+print("Total occurrences of '" + keyword + "' is: " + str(result))
+
+# total occurrences of a word from  an entered text
